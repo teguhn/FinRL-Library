@@ -25,7 +25,7 @@ def train_one():
     df = YahooDownloader(
         start_date=config.START_DATE,
         end_date=config.END_DATE,
-        ticker_list=config.DOW_30_TICKER,
+        ticker_list=config.JII_TICKER,
     ).fetch_data()
     print("==============Start Feature Engineering===========")
     fe = FeatureEngineer(
@@ -51,7 +51,7 @@ def train_one():
 
     env_kwargs = {
         "hmax": 100, 
-        "initial_amount": 1000000, 
+        "initial_amount": 150000000, 
         "buy_cost_pct": 0.001, 
         "sell_cost_pct": 0.001, 
         "state_space": state_space, 
