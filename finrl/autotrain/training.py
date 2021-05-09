@@ -52,8 +52,8 @@ def train_one():
     env_kwargs = {
         "hmax": 100, 
         "initial_amount": 150000000, 
-        "buy_cost_pct": 0.001, 
-        "sell_cost_pct": 0.001, 
+        "buy_cost_pct": 0.0018, # based on Mandiri Online Securities Trading
+        "sell_cost_pct": 0.0028, # based on Mandiri Online Securities Trading
         "state_space": state_space, 
         "stock_dim": stock_dimension, 
         "tech_indicator_list": config.TECHNICAL_INDICATORS_LIST, 
